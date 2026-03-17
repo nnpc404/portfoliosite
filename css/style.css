@@ -1,0 +1,134 @@
+/* リセットは別途 reset.css を使用する前提 */
+
+/* 基本スタイル */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #fff;
+}
+
+/* ヘッダー */
+header {
+  background-color: #f5f5f5;
+  padding: 10px 20px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+header nav a:hover {
+  color: #007acc;
+}
+
+/* ファーストビュー */
+#hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #e0f7fa;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+#hero p {
+  font-size: 1.5rem;
+}
+
+/* About */
+#about {
+  padding: 80px 20px;
+  background-color: #f0f0f0;
+}
+
+#about h2 {
+  text-align: center;
+}
+
+#about ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+/* Works */
+#works {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.works-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card a {
+  text-decoration: none;
+  color: #007acc;
+}
+
+/* Contact */
+#contact {
+  padding: 80px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #007acc;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+/* main.jsのfade-in用 */
+.card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.card.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
