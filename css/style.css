@@ -1,134 +1,78 @@
-/* リセットは別途 reset.css を使用する前提 */
-
-/* 基本スタイル */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
   margin: 0;
-  padding: 0;
-  color: #333;
-  background-color: #fff;
+  font-family: system-ui, sans-serif;
+  background: #0a0a0a;
+  color: #e5e5e5;
 }
 
-/* ヘッダー */
-header {
-  background-color: #f5f5f5;
-  padding: 10px 20px;
-}
-
-header nav ul {
+.header {
   display: flex;
-  list-style: none;
-  gap: 20px;
-}
-
-header nav a {
-  text-decoration: none;
-  color: #333;
-}
-
-header nav a:hover {
-  color: #007acc;
-}
-
-/* ファーストビュー */
-#hero {
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
-  background-color: #e0f7fa;
+  padding: 24px;
 }
 
-#hero h1 {
-  font-size: 3rem;
-  margin: 0;
+.logo {
+  font-size: 18px;
+  font-weight: 600;
 }
 
-#hero p {
-  font-size: 1.5rem;
-}
-
-/* About */
-#about {
-  padding: 80px 20px;
-  background-color: #f0f0f0;
-}
-
-#about h2 {
-  text-align: center;
-}
-
-#about ul {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-}
-
-/* Works */
-#works {
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.works-container {
+.nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  gap: 24px;
+  list-style: none;
+}
+
+.nav a {
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #fff;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #888;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
   gap: 20px;
 }
 
 .card {
-  background-color: #fff;
-  padding: 20px;
-  width: 250px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: block;
+  padding: 24px;
+  border-radius: 12px;
+  background: #111;
+  border: 1px solid #222;
+  transition: 0.3s;
 }
 
-.card a {
-  text-decoration: none;
-  color: #007acc;
+.card:hover {
+  border-color: #555;
+  transform: translateY(-4px);
 }
 
-/* Contact */
-#contact {
-  padding: 80px 20px;
-  background-color: #f0f0f0;
+.footer {
   text-align: center;
-}
-
-#contact ul {
-  list-style: none;
-  padding: 0;
-}
-
-#contact a {
-  text-decoration: none;
-  color: #007acc;
-}
-
-#contact a:hover {
-  text-decoration: underline;
-}
-
-/* フッター */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #f5f5f5;
-}
-
-/* main.jsのfade-in用 */
-.card {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.6s ease-out;
-}
-
-.card.appear {
-  opacity: 1;
-  transform: translateY(0);
+  padding: 40px;
+  color: #666;
 }

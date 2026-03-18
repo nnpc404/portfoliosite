@@ -3,68 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfolio site</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>NNPC404 Portfolio</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-  <!-- ヘッダー -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#works">Works</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- ファーストビュー -->
-  <section id="hero">
-    <h1>nnpc404</h1>
-    <p>Frontend Developer Portfolio</p>
-  </section>
-
-  <!-- 自己紹介 -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p><!-- 自己紹介文 -->こんにちは、nnpc404です。</p>
-    <ul>
-      <li>Skills: HTML / CSS / JavaScript</li>
-      <li>Currently learning: React / Figma</li>
+<header class="header">
+  <h1 class="logo">NNPC404</h1>
+  <nav>
+    <ul class="nav">
+      <li><a href="./">Home</a></li>
+      <li><a href="./works/">Works</a></li>
+      <li><a href="./about/">About</a></li>
+      <li><a href="./contact/">Contact</a></li>
     </ul>
-  </section>
+  </nav>
+</header>
 
-  <!-- 制作物 -->
-  <section id="works">
-    <h2>Works</h2>
-    <div class="works-container">
-      <!-- 作品1 -->
-      <div class="card">
-        <h3><!-- 作品名をここに -->Task App</h3>
-        <p><!-- 作品の説明をここに -->タスク管理アプリです</p>
-        <p>Tech: HTML / CSS / JavaScript</p>
-        <a href="#">GitHub</a>
-      </div>
-      <!-- 作品2（同様に追加可能） -->
-    </div>
-  </section>
+<main>
 
-  <!-- 連絡先 -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <ul>
-      <li><a href="https://github.com/nnpc404">GitHub</a></li>
-      <li><a href="https://twitter.com/nnpc404">Twitter</a></li>
-      <li><a href="https://www.instagram.com/nnpc404/">Instagram</a></li>
-    </ul>
-  </section>
+<section class="hero">
+  <h2>Frontend Engineer</h2>
+  <p>Practical Tools / Data Visualization</p>
+</section>
 
-  <!-- フッター -->
-  <footer>
-    <p>&copy; nnpc404</p>
-  </footer>
+<section class="works">
+  <h2>Works</h2>
+  <div class="grid">
 
-  <script src="js/main.js"></script>
+    <a href="./works/project1/" class="card">
+      <h3>Weather App</h3>
+      <p>API / JavaScript</p>
+    </a>
+
+    <a href="./works/project2/" class="card">
+      <h3>Task Manager</h3>
+      <p>UI / UX</p>
+    </a>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>© NNPC404</p>
+</footer>
+
+<script src="./js/main.js"></script>
 </body>
 </html>
